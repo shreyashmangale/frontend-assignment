@@ -15,11 +15,18 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-white px-5 ">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
+      <nav class="navbar navbar-expand-lg bg-white px-5 border border-bottom-1">
+        <div class="container-fluid d-flex justify-content-between">
           <div>
             <a class="navbar-brand" href="#">
               <img
@@ -30,20 +37,19 @@
             </a>
           </div>
 
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-
-          <div class="collapse navbar-collapse " id="navbarNav">
+          <div class="collapse navbar-collapse navbar-list" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#"
@@ -57,7 +63,7 @@
                 <a class="nav-link" href="#">CMA as Career?</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link" aria-current="page" href="#"
                   >Our Alumni</a
                 >
               </li>
@@ -70,21 +76,63 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">100% Placement</a>
               </li>
-
-
-                <button type="button" class="enroll-button">Primary</button>
-
             </ul>
           </div>
-
-          
+          <button type="button" class="enroll-button">Enroll Now</button>
         </div>
       </nav>
     </header>
 
     <main>
       <section class="banner">
-        <div>banner</div>
+        <div class="row">
+          <div class="col-7 banner-left">
+            <div class="banner-heading">
+              <h1>
+                Unlock your
+                <span
+                  style="
+                    text-decoration: underline;
+                    text-decoration-color: rgb(234, 48, 48);
+                    background-color: rgb(255, 238, 218);
+                  "
+                  >Financial</span
+                >
+                potential <span>with CMA</span>
+              </h1>
+            </div>
+            <div class="banner-content">
+              <span>About course</span>
+              <p>
+                CMA (Certified Management Accountant) USA is a globally recognized professional certification in the field of management accounting, offered by the Institute of Management Accountant (IMA). The certification demonstrates expertise in financial planning, analysis, control, decision support, and professional ethics.
+              </p>
+
+              <div class="advertise">
+                <img src="./images/pngwing.com.png" alt="person_image" />
+
+                <div class="advertise-content">
+                  <h2>
+                    Earn your US CMA in less than 12 Months
+                  </h2>
+                  <div style="width: 100%;
+                  height: 5px; background-color: rgb(234, 48, 48);"></div>
+                  <h4>
+                    Learn from Globally <br> Renowned CMA Instructor
+                  </h4>
+
+                  <h1>Mr. James</h1>
+
+                  <button type="button">Watch Now  <i class="fa fa-play"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 banner-right">
+            <div class="registration-details">
+                
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer></footer>
