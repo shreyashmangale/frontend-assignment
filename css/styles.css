@@ -190,7 +190,7 @@
 
 .form input {
   margin-top: 10px;
-  padding: 15px 5px;
+  padding: 15px 10px;
   background-color: #fff1dd;
   border-radius: 10px;
 }
@@ -200,6 +200,7 @@
   padding: 12px 5px;
   background-color: #fff1dd;
   border-radius: 10px;
+  font-size: 18px;
 }
 
 .register-button > button {
@@ -401,13 +402,10 @@
   text-decoration-color: rgb(234, 234, 48);
 }
 
-
 .cards-img {
   position: relative;
   height: 60px;
 }
-
-
 
 .footer-section {
   padding: 80px;
@@ -417,7 +415,7 @@
   justify-content: center;
 }
 
-.contact-details{
+.contact-details {
   width: 1024px;
   display: flex;
   flex-direction: column;
@@ -425,7 +423,7 @@
   align-items: center;
 }
 
-.referral-info{
+.referral-info {
   margin-top: 30px;
   width: 650px;
   height: 150px;
