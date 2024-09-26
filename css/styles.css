@@ -211,7 +211,7 @@
   background-color: rgb(254, 59, 72);
 }
 
-#content-partner {
+.content-partner {
   padding: 20px 80px;
   height: fit-content;
 }
@@ -449,4 +449,23 @@
 .support-info {
   margin-top: 70px;
   color: rgb(231, 226, 226);
+}
+
+
+@media screen and (max-width: 540px) {
+  .banner, .banner-content, .banner-right, .registration-details, .content-partner, .content-partner-left, .instructor, .why-cma-section, .why-cma-header-paragraph{
+    padding: 20px;
+  }
+
+  .why-cma-header-paragraph, .why-cma-header{
+    width: 100%;
+    padding: 10px;
+    
+  }
+
+  .advertise {
+    width: 100%;
+  }
+
+
 }
