@@ -203,9 +203,16 @@
   font-size: 18px;
 }
 
+.register-button {
+  padding: 10px;
+  background-image: radial-gradient(rgb(223, 223, 2) 10%, transparent 10%);
+  background-size: 1cm 1cm;
+  background-repeat: repeat;
+}
+
 .register-button > button {
   width: 100%;
-  padding: 12px;
+  padding: 1px;
   font-size: 14px;
   color: yellow;
   background-color: rgb(254, 59, 72);
@@ -237,10 +244,9 @@
 }
 
 .mobile-image {
-  background: url("../images/mobile-image.png");
+  background: url('../images/background-dots-snippet.jpg');
+  background-position: bottom right;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 150%;
 }
 
 .instructor {
@@ -250,7 +256,10 @@
   /* clip-path: circle(22.5% at 74% 100%); */
   overflow: hidden;
   position: relative;
+  /* clip-path: circle(19.6% at 80% 100%); */
+
 }
+
 
 .instructor-intro > span {
   background-color: rgb(253, 229, 52);
@@ -307,12 +316,17 @@
 
 .why-cma-section {
   padding: 80px;
-  background-color: rgb(255, 238, 218);
+  background-color: rgb(255, 242, 226);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url('../images/background-dots-snippet-pink.jpg');
+  background-position: bottom left;
+  background-repeat: no-repeat;
+
 }
+
 
 .why-cma-header {
   width: 70vw;
@@ -327,10 +341,10 @@
   text-decoration: underline;
   text-decoration-color: rgb(235, 235, 7);
 }
-.why-cma-header > p {
+.why-cma-header-paragraph {
   text-align: center;
   font-size: 25px;
-  padding: 5px 150px;
+  /* padding: 5px 150px; */
 }
 
 .course-info {
@@ -339,32 +353,29 @@
   gap: 10px;
 }
 .course-info > div {
-  padding: 15px 30px;
+  padding: 10px;
   border: 2px solid rgb(145, 142, 142);
   border-radius: 5px;
 }
 
-.course-info > div > h4 {
-  font-size: 28px;
-  font-weight: 500;
-}
+
 
 .program-details {
-  margin-top: 80px;
-  width: 100%;
-  height: fit-content;
   background-color: white;
-  display: flex;
-  flex-direction: row;
+
   border: 1px solid yellow;
   border-radius: 20px;
 }
 
-.program-details > div {
-  width: 50%;
-  padding: 80px;
+.program-details >  div {
+
+  padding: 20px 80px;
   color: rgb(72, 71, 71);
   font-weight: 300;
+}
+
+.program-details h2 {
+  line-height: 1.6;
 }
 
 .program-details-right > div {
@@ -409,10 +420,14 @@
 
 .footer-section {
   padding: 80px;
-  background-color: rgb(254, 59, 72);
+  background-color: rgb(241, 37, 50);
   text-align: center;
   display: flex;
   justify-content: center;
+  background-image: url('../images/background-snippet-red.jpg'), url('../images/background-snippet-red-mirrored.jpg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: left center, right center; 
+  background-size: contain; 
 }
 
 .contact-details {
@@ -425,7 +440,7 @@
 
 .referral-info {
   margin-top: 30px;
-  width: 650px;
+  /* width: 650px; */
   height: 150px;
   text-align: center;
   border: 5px dashed white;
@@ -436,10 +451,12 @@
 }
 
 .referral-info > button {
-  position: relative;
+
+  position: absolute;
+  bottom: -40px;
   background-color: rgb(18, 18, 18);
   color: yellow;
-  font-size: 26px;
+  font-size: 1.5em;
   padding: 10px 20px;
   font-weight: 500;
   letter-spacing: 2px;
@@ -452,13 +469,13 @@
 }
 
 
-@media screen and (max-width: 540px) {
-  .banner, .banner-content, .banner-right, .registration-details, .content-partner, .content-partner-left, .instructor, .why-cma-section, .why-cma-header-paragraph{
+@media screen and (max-width: 768px)  {
+  .banner, .banner-content, .banner-right, .registration-details, .content-partner, .content-partner-left, .instructor, .why-cma-section, .program-details>div, .more-info{
     padding: 20px;
   }
 
   .why-cma-header-paragraph, .why-cma-header{
-    width: 100%;
+    text-justify: justify;
     padding: 10px;
     
   }
@@ -466,6 +483,15 @@
   .advertise {
     width: 100%;
   }
+}
 
-
+@media screen and (max-width: 540px){
+  .referral-info > button {
+    /* width: 50%;
+    height: 50%;
+    font-size: 14px; */
+    
+    font-size: 0.875rem; /* Adjust font size */
+    padding: 0.175rem 0.75rem;
+  }
 }
