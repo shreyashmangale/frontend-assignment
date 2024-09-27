@@ -486,11 +486,7 @@
 }
 
 @media screen and (max-width: 540px){
-  .referral-info > button {
-    /* width: 50%;
-    height: 50%;
-    font-size: 14px; */
-    
+  .referral-info > button {    
     font-size: 0.875rem; /* Adjust font size */
     padding: 0.175rem 0.75rem;
   }
